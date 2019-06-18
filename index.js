@@ -6,7 +6,6 @@ function init() {
   document.onkeydown = function (e) {
     const key = parseInt(e.detail || e.which);
     if (key === code[index]) {
-      logIt(key)
       index++;
 
       if (index === code.length) {
