@@ -3,7 +3,7 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init() {
   let index = 0
-  document.addEventListener('click',function onKeyDownHandler(e) {
+  document.onkeydown = function (e) {
     const key = parseInt(e.detail || e.which);
     logIt(key)
     if (key === code[index]) {
@@ -17,7 +17,7 @@ function init() {
     } else {
       index = 0;
     }
-  })
+  }
 }
 function logIt(key){
   let element = document.createElement('div');
