@@ -5,8 +5,8 @@ function init() {
   let index = 0
   document.onkeydown = function (e) {
     const key = parseInt(e.detail || e.which);
-    logIt(key)
     if (key === code[index]) {
+      logIt(key)
       index++;
 
       if (index === code.length) {
