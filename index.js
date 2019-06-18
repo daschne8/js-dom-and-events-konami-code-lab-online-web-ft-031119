@@ -19,3 +19,6 @@ function init() {
     }
   })
 }
+function logIt(){
+  console.log("logIt function runs")
+}
