@@ -5,7 +5,7 @@ function init() {
   let index = 0
   document.addEventListener('click',function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which);
-
+    logIt(key)
     if (key === code[index]) {
       index++;
 
@@ -19,9 +19,9 @@ function init() {
     }
   })
 }
-function logIt(){
+function logIt(key){
   let element = document.createElement('div');
-  element.innerHTML = 'Hello, DOM!';
-element.style.backgroundColor = '#f9f9f9';
+  element.innerHTML = key;
+  element.style.backgroundColor = '#f9f9f9';
   document.body.appendChild(element);
 }
