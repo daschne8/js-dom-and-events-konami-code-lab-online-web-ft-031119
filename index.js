@@ -20,5 +20,8 @@ function init() {
   })
 }
 function logIt(){
-  console.log("logIt function runs")
+  let element = document.createElement('div');
+  element.innerHTML = 'Hello, DOM!';
+element.style.backgroundColor = '#f9f9f9';
+  document.body.appendChild(element);
 }
