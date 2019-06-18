@@ -19,3 +19,18 @@ function init() {
     }
   }
 }
+function onKeyDownHandler(e) {
+  const key = parseInt(e.detail || e.which);
+
+  if (key === code[index]) {
+    index++;
+
+    if (index === code.length) {
+      alert("Hurray!");
+
+      index = 0;
+    }
+  } else {
+    index = 0;
+  }
+}
